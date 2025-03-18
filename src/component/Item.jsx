@@ -1,7 +1,9 @@
-const Top = () => {
+const Item = () => {
     return(
         <div>
-            날짜
+
         </div>
     )
 };
+
+export default Item;
