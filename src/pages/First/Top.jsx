@@ -4,7 +4,7 @@ const Top = () => {
     const navigate = useNavigate();
 
     const handleChangeNext = () => {
-        navigate('/commens/editor')
+        navigate('/commens/editorlist')
     };
 
     return(
