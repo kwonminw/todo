@@ -3,8 +3,7 @@ import { useState, useRef } from "react";
 import DiaryItem from "./DiaryItem";
 import DiaryList from "./DiaryList";
 
-
-const DiaryEditor = ({onCreate}) => {
+const DiaryEditor = ({ onCreate }) => {
     const authorInput = useRef();
     const contentInput = useRef();
 
@@ -18,8 +17,8 @@ const DiaryEditor = ({onCreate}) => {
         setState({
             ...state,
             [e.target.name]: e.target.value,
-        })
-    }
+        });
+    };
 
     const handleSubmit = () => {
         if (state.author.length < 1) {
@@ -50,7 +49,7 @@ const DiaryEditor = ({onCreate}) => {
                 <input
                     ref={authorInput}
                     name="author"
-                    placeholder="본인의 이름을 입력해주세요"
+                    placeholder="작성자 이름을 입력해주세요"
                     value={state.author}
                     onChange={handleChangeState}
                 />
