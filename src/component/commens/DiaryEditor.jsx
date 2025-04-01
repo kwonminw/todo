@@ -31,10 +31,10 @@ const DiaryEditor = ({ onCreate }) => {
             contentInput.current.focus();
             return;
         }
-       
-        onCreate(state.author, state.content, state.emotion); 
+
+        onCreate(state.author, state.content, state.emotion);
         alert("저장완료!");
-        
+
         setState({
             author: "",
             content: "",
@@ -42,7 +42,7 @@ const DiaryEditor = ({ onCreate }) => {
         });
     }
 
-    return(
+    return (
         <div className="diary">
             <h2>오늘의 일기</h2>
             <div>
@@ -73,7 +73,7 @@ const DiaryEditor = ({ onCreate }) => {
                     <option value={5}>5</option>
                 </select>
             </div>
-            <div>
+            <div className="btn">
                 <button onClick={handleSubmit}>일기 저장하기</button>
             </div>
         </div>

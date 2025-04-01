@@ -15,9 +15,9 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
             )
     }
 
-    return(
-        <div>
-            <h3>🍀 My List 🍀</h3>
+    return (
+        <div className="TodoList">
+            <h3>My TODO List 🍀</h3>
             <input
                 value={search}
                 onChange={onChangeSearch}

@@ -11,17 +11,16 @@ const TodoWrite = ({ onCreate }) => {
     const onSubmit = () => {
         if (!content) {
             inputRef.current.focus();
-          return;
+            return;
         }
         onCreate(content);
         setContent('');
     };
 
-    return(
+    return (
         <div className='TodoWrite'>
-            <h3>새로운 Todo 작성하기 🖋️</h3>
             <div className='WriteContent'>
-                <input 
+                <input
                     value={content}
                     onChange={onChangeContent}
                     placeholder="할 일 목록을 추가해주세요"

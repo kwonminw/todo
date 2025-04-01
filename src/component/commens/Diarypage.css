@@ -1,0 +1,96 @@
+.Diarypage {
+    padding-bottom: 72px;
+}
+
+.DiaryList {
+    padding: 32px 16px;
+}
+
+.Diarypage .diary {
+    border-bottom: 8px solid #eee;
+    padding: 32px 16px;
+}
+
+.Diarypage h2,
+.DiaryList h2 {
+    padding-bottom: 20px;
+}
+
+.Diarypage .diary>div {
+    padding: 4px 0;
+}
+
+.Diarypage .diary input,
+.Diarypage .diary textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0 12px;
+}
+
+.Diarypage .diary textarea {
+    height: 250px;
+    padding: 12px;
+}
+
+.Diarypage .diary .score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Diarypage .diary .score select {
+    width: 48px;
+    height: 28px;
+    border: 1px solid #ccc;
+}
+
+.Diarypage .diary .btn {
+    text-align: right;
+}
+
+.Diarypage .diary button {
+    width: 120px;
+    height: 42px;
+    border: 0;
+    background-color: #1f93ff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.DiaryItem {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.DiaryItem:last-child {
+    border-bottom: 0;
+}
+
+.DiaryItem .row2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.DiaryItem .content {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.DiaryItem .emotion span {
+    color: #1f93ff;
+    font-weight: 800;
+}
+
+.DiaryItem .btn {
+    text-align: right;
+}
+
+.DiaryItem .btn button {
+    margin-left: 4px;
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+    color: #555;
+}

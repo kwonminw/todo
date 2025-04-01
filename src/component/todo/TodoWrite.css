@@ -1,29 +1,33 @@
 /* TodoWrite.css */
 
+.TodoWrite {
+    padding: 0 16px 16px 16px;
+}
+
 .TodoWrite .WriteContent {
-    width: 100%;
     display: flex;
-    gap: 10px;
 }
 
 .TodoWrite input {
     flex: 1;
     box-sizing: border-box;
     border: 1px solid rgb(220, 220, 220);
-    border-radius: 5px;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
     padding: 15px;
 }
 
-.TodoWrite input:focus{
+.TodoWrite input:focus {
     outline: none;
     border: 1px solid #1f93ff;
+    border-right: 0;
 }
 
-.TodoWrite button{
+.TodoWrite button {
     cursor: pointer;
     width: 80px;
     border: none;
     background-color: #1f93ff;
     color: white;
-    border-radius: 5px;
+    border-radius: 0 4px 4px 0;
 }
